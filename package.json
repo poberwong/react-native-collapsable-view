@@ -1,0 +1,19 @@
+{
+  "name": "react-native-collapsable-view",
+  "version": "0.1.0",
+  "description": "a expandable and collapsable view that can be controlled with a handler",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bob1993/react-native-collapsable-view.git"
+  },
+  "author": "poberwong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bob1993/react-native-collapsable-view/issues"
+  },
+  "homepage": "https://github.com/Bob1993/react-native-collapsable-view#readme"
+}
