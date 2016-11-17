@@ -15,7 +15,8 @@ const ICONS = {
 
 export default class extends Component {
 	static propTypes = {
-		expanded: PropTypes.bool
+		expanded: PropTypes.bool,
+		title: PropTypes.string
 	}
 
 	static defaultProps = {
@@ -37,10 +38,9 @@ export default class extends Component {
 		const finalValue = expanded ? minHeight : minHeight + maxHeight
 
 		this.setState({expanded: !expanded})
-
 		animation.setValue(initialValue)
 
-		Animated.spring(animation, {
+		Animated.timing(animation, {
 			toValue: finalValue
 		}).start()
 	}
@@ -85,15 +85,17 @@ const styles = StyleSheet.create({
     padding : 10, 
     color :'#2a2f43', 
     fontWeight:'bold' 
-    }, 
-    button : { 
-    }, 
-    buttonImage : { 
-      width : 30, 
-      height : 25 
-    }, 
-    body : { 
-      padding : 10, 
-      paddingTop : 0 
-    }
+  }, 
+  button : {
+  	justifyContent: 'center',
+  	alignItems: 'center'
+  }, 
+  buttonImage : { 
+    width : 25, 
+    height : 20 
+  }, 
+  body : { 
+    padding : 10, 
+    paddingTop : 0 
+  }
 });
