@@ -72,30 +72,30 @@ export default class extends Component {
 }
 
 const styles = StyleSheet.create({
-  container : { 
+  container: { 
     backgroundColor: '#fff', 
     margin:10, 
     overflow:'hidden' 
   }, 
-  titleContainer : { 
+  titleContainer: { 
     flexDirection: 'row' 
   }, 
-  title : { 
-    flex : 1, 
-    padding : 10, 
-    color :'#2a2f43', 
+  title: { 
+    flex: 1, 
+    padding: 10, 
+    color:'#2a2f43', 
     fontWeight:'bold' 
   }, 
-  button : {
+  button: {
   	justifyContent: 'center',
   	alignItems: 'center'
   }, 
-  buttonImage : { 
-    width : 25, 
-    height : 20 
+  buttonImage: { 
+    width: 25, 
+    height: 20 
   }, 
-  body : { 
-    padding : 10, 
-    paddingTop : 0 
+  body: { 
+    padding: 10, 
+    paddingTop: 0 
   }
 });
