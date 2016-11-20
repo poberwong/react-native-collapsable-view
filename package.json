@@ -1,6 +1,6 @@
 {
   "name": "react-native-collapsable-view",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "a expandable and collapsable view that can be controlled with a handler",
   "main": "lib/index.js",
   "scripts": {
