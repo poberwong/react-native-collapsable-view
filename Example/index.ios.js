@@ -13,7 +13,7 @@ import {
   Text,
   View
 } from 'react-native'
-import Panel from 'react-native-collapsable-view'
+import Panel from './Panel'
 
 export default class Example extends Component {
   render() {
@@ -28,7 +28,7 @@ export default class Example extends Component {
         <Panel title='Another Panel'>
           <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</Text>
         </Panel>
-        <Panel title='Another Panel'>
+        <Panel onToggle={() => console.log('...toggled')}>
           <Image source={require('./Funny.png')} style={{height: 200, width: null, resizeMode: 'contain'}}/>
         </Panel>
       </ScrollView>

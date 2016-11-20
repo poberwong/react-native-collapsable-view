@@ -16,7 +16,8 @@ const ICONS = {
 export default class extends Component {
 	static propTypes = {
 		expanded: PropTypes.bool,
-		title: PropTypes.string
+		title: PropTypes.string,
+		onToggle: PropTypes.func
 	}
 
 	static defaultProps = {
@@ -24,7 +25,7 @@ export default class extends Component {
 	}
 
 	constructor (props) {
-	  super(props);
+	  super(props)
 
 	  this.state = {
 	  	expanded: props.expanded,
@@ -33,6 +34,7 @@ export default class extends Component {
 	}
 
 	toggle = () => {
+		const { onToggle } = this.props
 		const { expanded, maxHeight, minHeight, animation } = this.state
 		const initialValue = expanded ? minHeight + maxHeight : minHeight
 		const finalValue = expanded ? minHeight : minHeight + maxHeight
@@ -43,6 +45,8 @@ export default class extends Component {
 		Animated.timing(animation, {
 			toValue: finalValue
 		}).start()
+
+		onToggle()
 	}
 
 	render () {
