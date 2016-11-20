@@ -29,11 +29,11 @@ render() {
 Like this, you can fill everything you like in the `Panel` and you'd better use 
 `ScrollView` as the parent view because you don't know how large the children will be.
 
-Props
- Name | Description | Default | Type
-------|-------------|----------|-----------
-expanded | the initial state of panel | true | boolean
-title | title on the handler | string
+## Props
+ Name | Description | Default | Type  
+------|-------------|----------|-----------  
+expanded | the initial state of panel | true | boolean  
+title | title on the handler | string | undefined
 
 ## License
 *MIT*
