@@ -1,9 +1,9 @@
 # react-native-collapsable-view
-a expandable and collapsable view that can be controlled with a handler
+a expandable and collapsable view that can be controlled with a handler   
 ![](http://upload-images.jianshu.io/upload_images/442688-cb766a48d713b4fa.gif?imageMogr2/auto-orient/strip)
 
 ## Install
-`npm install react-native-collapsable-view -save`
+`npm install react-native-collapsable-view --save`
 
 ## Usage
 ```javascript
